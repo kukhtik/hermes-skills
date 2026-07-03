@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Telegram Bot Update",
+  "description": "Contract for Telegram Bot API update (PIVOBOT, FAMILY_TREE)",
+  "type": "object",
+  "required": ["update_id"],
+  "properties": {
+    "update_id": {"type": "integer"},
+    "message": {
+      "type": "object",
+      "required": ["message_id", "date", "chat"],
+      "properties": {
+        "message_id": {"type": "integer"},
+        "from": {
+          "type": "object",
+          "required": ["id", "is_bot"],
+          "properties": {
+            "id": {"type": "integer"},
+            "is_bot": {"type": "boolean"},
+            "first_name": {"type": "string"},
+            "last_name": {"type": "string"},
+            "username": {"type": "string"},
+            "language_code": {"type": "string"}
+          }
+        },
+        "date": {"type": "integer"},
+        "chat": {
+          "type": "object",
+          "required": ["id", "type"],
+          "properties": {
+            "id": {"type": "integer"},
+            "type": {"type": "string", "enum": ["private", "group", "supergroup", "channel"]},
+            "title": {"type": "string"},
+            "username": {"type": "string"}
+          }
+        },
+        "text": {"type": "string"},
+        "callback_query": {
+          "type": "object",
+          "properties": {
+            "id": {"type": "string"},
+            "data": {"type": "string"}
+          }
+        }
+      }
+    },
+    "callback_query": {
+      "type": "object",
+      "required": ["id", "from"],
+      "properties": {
+        "id": {"type": "string"},
+        "from": {"type": "object"},
+        "data": {"type": "string"},
+        "message": {"type": "object"}
+      }
+    }
+  }
+}

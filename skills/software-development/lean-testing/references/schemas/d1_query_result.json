@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Cloudflare D1 Row — Generic",
+  "description": "Contract for D1 SQL query result row (PIVOBOT, FAMILY_TREE)",
+  "type": "object",
+  "properties": {
+    "results": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true
+      }
+    },
+    "success": {"type": "boolean"},
+    "meta": {
+      "type": "object",
+      "properties": {
+        "served_by": {"type": "string"},
+        "duration": {"type": "number"},
+        "changes": {"type": "integer"},
+        "last_row_id": {"type": ["integer", "null"]}
+      }
+    }
+  },
+  "required": ["results", "success"]
+}
