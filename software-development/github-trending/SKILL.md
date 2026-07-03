@@ -1,6 +1,6 @@
 ---
 name: github-trending
-description: "Knowledge references from trending GitHub repositories + expert distillation case study. 20 entries catalogued with links, summaries, and applicability to projects."
+description: "Knowledge references from trending GitHub repositories + expert distillation case study. 21 entries catalogued with links, summaries, and applicability to projects."
 version: 1.0.0
 author: Hermes Agent
 license: MIT
@@ -41,6 +41,7 @@ Each entry has a separate reference file with: summary, what to take, applicabil
 | 27 | testsprite-cli | Testing | `references/27-testsprite-cli.md` |
 | 30 | openwiki | Code Tools | `references/30-openwiki.md` |
 | 31 | Thinking Machines | ML Research | `references/31-thinking-machines.md` |
+| 32 | Sakana AI / Sheaf-ADMM | ML Research | `references/32-sakana-sheaf-admm.md` |
 
 ## Projects for applicability
 
