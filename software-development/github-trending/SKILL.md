@@ -12,9 +12,9 @@ metadata:
 
 # GitHub Trending References
 
-Knowledge extracted from 19 trending GitHub repositories (≤30 days, ≥1000 stars, ≥33 stars/day).
+Knowledge extracted from 20 trending GitHub repositories (≤30 days, ≥1000 stars, ≥33 stars/day) plus 1 expert-distillation case study (Thinking Machines / Bridgewater).
 
-Each repo has a separate reference file with: summary, what to take, applicability to projects.
+Each entry has a separate reference file with: summary, what to take, applicability to projects.
 
 ## Catalogue
 
